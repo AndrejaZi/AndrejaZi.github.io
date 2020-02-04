@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+   
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <title>Andreja Živanović | O meni</title>
+    <link type="text/css" href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="jQueryUI/jquery-ui.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/title/favicon32x32.ico">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="jQueryUI/jquery-ui.js"></script>
+        <!--    
+        font-family: 'Courgette', cursive; //imprezime
+        font-family: 'Roboto Condensed', sans-serif;ostatak teksta
+        -->
+    
+</head>
+
+<body>
+   <div class="toggle"><i class="fas fa-bars"></i></div>
+   <div class="side-menu">
+       
+       <div class="side-menu-menu">
+          
+           <ul>
+                <li id="menu-x"><i class="fas fa-times"></i></li>
+                <li><a href="index.html">početna</a></li>
+                <li><a href="o-meni.html">o meni</a></li>
+                <li><a href="galerija.html">galerija</a></li>
+                <li><a href="media.html">medija</a></li>
+                <li><a href="seminarski.html">seminarski</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+            </ul>
+       </div>
+   </div>
+    <div class="container">
+        <div class="main_content">
+                <div class="navigation clearfix">
+                    <div class="nav-name">
+                        <p><a href="index.html">A.Živanović</a></p>
+                    </div>
+
+                    <div class="nav-menu">
+                        <ul>
+                            <li><a href="index.html">početna</a></li>
+                            <li><a href="o-meni.html">o meni</a></li>
+                            <li><a href="galerija.html">galerija</a></li>
+                            <li><a href="media.html">medija</a></li>
+                            <li><a href="seminarski.html" id="trenutna">seminarski</a></li>
+                            <li><a href="kontakt.html">kontakt</a></li>
+                        </ul>
+                    </div>
+                </div>
+<!--        Kraj navigacije-->
+      
+        <div class="main-body">
+          <h3 class="slcMenu-first">Select Menu</h3>
+          <p class="opis">Selectmenu je widget koji jQuery UI nudi svojim korisnicima. Ona transformiše klasičan select element tako što mu dodaje razne nove stilove, ali i kontrole koje mogu da se menjaju. On ne menja originalni select element, već ga samo vizualno poboljša. Selectmenu podržava optgroup element i takođe pruža i njemu dodatne opcije. Svaka od ovih opcija koje selectmenu pruža se mogu isključiti uz pomoć određene osobine i na taj način se vraća stari izgled ovih elemenata. </p>
+           <div class="first-select">
+               <div class="menu">
+                   <select id="selectMenu">
+                        <option value="100">100px</option>
+                        <option value="150">150px</option>
+                        <option value="200">200px</option>
+                        <option value="250">250px</option>
+                    </select>
+                    <select id="boja">
+                        <option value="#3498db">Plava</option>
+                        <option value="#f39c12">Narandžasta</option>
+                        <option value="#f1c40f">Žuta</option>
+                        <option value="#2c3e50">Siva</option>
+                    </select>
+               </div>
+               <div class="menu-item">
+                   <div class="circle" id="circle"></div>
+               </div>
+           </div>
+<!--           Kraj prvog selectmenu-->
+          <h3 class="Sider-header">Slider</h3>
+          <p class="opis">Slider dodatak od odabranog elementa pravi slajder. Postoje razne opcije poput više ručica i ranga. Ručka se može pomerati uz pomoć miša ili tastera na tastaturi. Da bi stvorio ručkice, dodatak ih pokreće uz pomoć klase ui-slider-handle. Ova ručka se može menjati i stilizovati na nekoliko načina. Takođe postoji opcija da se ograniči vrednost koja može biti odabrana, od minimalne početne do maksimalne vrednosti.</p>
+           <div class="sem-slider">
+               <div class="slider ui-widget-content">
+                   <p class="ui-state-default ui-corner-all ui-helper-clearfix"><span class="ui-icon ui-icon-pencil"></span>Detaljno biranje boja</p>
+                   <div id="red"></div>
+                   <div id="green"></div>
+                   <div id="blue"></div>
+               </div>
+               <div class="slider-item">  
+                   <div class="slider-item1"></div>
+               </div>
+           </div>
+<!--           Kraj slider-a -->
+           <h3 class="spinner-header">Spinner</h3>
+           <p class="opis">Spinner je dodatak koji je savršen za razne numeričke unose. Dozvoljava korisnicima da ukucaju vrednost direktno ili modifikuju već postojeću tako što je povećavaju uz pomoć komandi sa dodatka. Te dve komande su u obliku dva dugmeta, jedno služi za povećavanje vrednosti iz dodatka, a drugo za njeno smanjenje koji mogu da se pokrenu i uz pomoć tastature.</p> 
+           <div class="spinner-body">
+               <div>
+                <p>Koliko imate godina?</p>
+                 <input type="text" id="spinner" value="0">  
+               </div>
+               <div class="toggleImage">
+                   <div class="toggleImage1">
+                       <img src="images/age1of5.png" alt="age-baby">
+                       <p>Vi ste beba...Kako rukujete ovim uopšte?</p>
+                   </div>
+                   <div class="toggleImage2">
+                       <img src="images/age2of5.png" alt="age-boy">
+                       <p>Vi ste dečak.</p>
+                   </div>
+                   <div class="toggleImage3">
+                       <img src="images/age3of5.png" alt="age-man">
+                       <p>Vi ste čovek...verovatno imate bitnijih obaveza.</p>
+                   </div>
+                   <div class="toggleImage4">
+                       <img src="images/age4of5.png" alt="age-older">
+                       <p>Vi ste stariji čovek, na zasluženom odmoru od posla.</p>
+                   </div>
+                   <div class="toggleImage5">
+                       <img src="images/age5of5.png" alt="age-vampire">
+                       <p>Koliko godina? Vi ste vampir :O</p>
+                   </div>
+               </div>
+           </div>
+<!--           Kraj spinner dela-->
+           
+           <div class="download">
+               <div>
+                   <img src="images/word.png" alt="word">
+                   <p>Sačuvaj .docx fajl</p>
+                   <a href="Andreja_Zivanovic_41-2016.docx">Seminarski rad.doc</a>
+               </div>
+               <div>
+                   <img src="images/pdf.png" alt="pdf">
+                   <p>Sačuvaj .pdf fajl</p>
+                   <a href="Andreja_Zivanovic_41-2016.pdf" download>Seminarski rad.pdf</a>
+               </div>
+               <div>
+                   <img src="images/pp.png" alt="pp">
+                   <p>Sačuvaj .pptx fajl</p>
+                   <a href="Andreja_Zivanovic_41-2016.pptx">Seminarski rad.ppp</a>
+               </div>
+           </div>
+           
+        </div>
+       
+       
+        </div>
+<!--        kraj main content dela-->
+       
+       
+       
+        <div class="footer">   
+            <div class="copyright"><p>Copyright &#169; Andreja Živanović 2019</p></div>
+        </div>
+    </div>
+    
+    
+    <script src="app.js"></script>
+    
+</body>    
+
+</html>

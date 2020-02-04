@@ -1,0 +1,1125 @@
+/*Plava boja #3498db*/
+
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+    font-size: 20px;
+    margin: 0 auto;
+    background-color: #F6F6F6;
+}
+
+body {
+    display: flex;
+    position: relative;
+    padding-bottom: 100px;
+    min-height: 100vh;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix::after {
+    content: '.';
+    visibility: hidden;
+    clear: both;
+    display: block;
+    height: 0px;
+}
+
+.btn {
+    width: 60px;
+    height: 20px;
+    border: 3px solid #3498db;
+    border-radius: 20px;
+    font-size: 1.2em;
+    padding: 5px 10px 5px 10px;
+    color: #3498db;
+    text-decoration: none;
+}
+
+.nav-name a{
+    color:#000;
+    text-decoration: none;
+}
+
+/*Side menu*/
+.side-menu {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background-color: #34495e;
+    z-index: 100;
+    right: -200px;
+    transition: 1s;
+    display: none;
+}
+
+.side-menu-slideIn {
+    right: 0px;
+}
+
+.side-menu-slideOut {
+    right: -200px;
+}
+
+.side-menu-menu {
+    z-index: 100;
+}
+
+.side-menu-menu ul li {
+    text-align: center;
+    list-style-type: none;
+    width: 100px;
+    height: 50px;
+    margin: auto;
+}
+
+.side-menu-menu ul li:first-child {
+    text-align: left;
+    left: 20px;
+    padding-left: 20px;
+    font-size: 1.3em;
+    margin: 20px auto 20px 0px;
+}
+
+.side-menu-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.toggle {
+    position: fixed;
+    right: 40px;
+    font-size: 1.7em;
+    margin: 20px 30px 0px 0px;
+    display: none;
+    z-index: 10;
+}
+
+.noScroll {
+    pointer-events: none;
+}
+
+.opis {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+    padding-bottom: 50px;
+}
+
+/*Kraj globalnih promenljivih*/
+
+
+/*Pocetak home strane*/
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.navigation {
+    margin: 10px 10px 10px 10px;
+
+}
+
+.navigation .nav-name {
+    float: left;
+    font-family: 'Courgette', cursive;
+    padding-top: 12px;
+    font-size: 1.3em;
+}
+
+.navigation .nav-menu {
+    float: right;
+}
+
+.navigation .nav-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 10px 10px 10px;
+
+}
+
+.navigation .nav-menu ul li a {
+    color: #000;
+    text-decoration: none;
+    position: relative;
+    transition: 0.7s all;
+    display: block;
+    overflow: hidden;
+}
+
+.navigation .nav-menu ul li a::before {
+    content: '';
+    border-bottom: 2px solid #3498db;
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    right: 350px;
+    bottom: 0px;
+    transition: 0.5s all;
+}
+
+#trenutna {
+    border-bottom: 2px solid #3498db;
+}
+
+.navigation .nav-menu ul li a:hover::before {
+    right: 0;
+}
+
+.home-greeting-back {
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+}
+
+.home-greeting p {
+    font-size: 1.3em;
+    position: relative;
+    left: 20%;
+}
+
+.home-greeting {
+    position: relative;
+    top: 7%;
+}
+
+.home-greeting #hello {
+    font-size: 1.9em;
+    width: 70%;
+}
+
+#front {
+    position: relative;
+    margin-top: 4%;
+    left: 28%;
+    color: #2980b9;
+    width: 30%;
+    font-size: 2.8em;
+    font-weight: 300;
+}
+
+#front .front-span {
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.home-greeting p[class=pic] {
+    display: inline-block;
+    color: #bdc3c7;
+    padding-top: 20px;
+    padding-right: 20px;
+    font-size: 2.1em;
+    position: relative;
+    left: 32%;
+}
+
+.btnFull {
+    color: #fff;
+    background-color: #3498db;
+
+}
+
+.buttons {
+    position: relative;
+    left: 31%;
+    padding-top: 30px;
+    width: 30%;
+}
+
+/*Pocetak radova*/
+
+.radovi {
+    margin-top: 30px;
+    position: relative;
+    margin: 0 auto;
+
+}
+
+.radovi .naslov-radovi {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    position: relative;
+
+    /*    border-bottom:2px solid #3498db;*/
+}
+
+.radovi .wix-screen {
+    background-image: url(images/wix1.png);
+}
+
+.radovi .naslov-radovi::before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 200px;
+    margin-left: -10px;
+    left: calc(50%-200px);
+    background-color: #3498db;
+}
+
+.prvi-rad,
+.drugi-rad {
+    margin: 0 auto;
+    width: 60%;
+    height: 350px;
+    max-width: 100%;
+    border: 2px solid #DCDCDC;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 30px;
+}
+
+.prvi-rad-screen,
+.drugi-rad-screen {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background-image: url(images/Rad1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    max-width: 100%;
+}
+
+.drugi-rad-screen {
+    background-image: url(images/Rad2.png);
+}
+
+.prvi-rad-tech,
+.drugi-rad-tech {
+    position: relative;
+    top: 20px;
+    margin-left: 30px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.rad-naslov {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.rad-tech {
+    font-size: 1.2em;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.prvi-rad .prvi-rad-tech .btnGalerija {
+
+    margin-top: 15px;
+}
+
+.tech-sep {
+    margin-bottom: 15px;
+}
+
+/*Pocetak footer-a*/
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20%;
+    background-image: url(images/footer3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+}
+
+.footer .copyright {
+    margin-top: 10px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/*O meni strana*/
+
+/*Menjajuci tekst*/
+
+.changing-text {
+    width: 100%;
+    height: 200px;
+    padding-top: 80px;
+    text-align: center;
+}
+
+.changing-text p {
+    font-size: 1.5em;
+}
+
+.changing-text p span::before {
+    content: 'zaljubljenik u tehnologiju';
+    animation: animate 1 8s;
+}
+
+@keyframes animate {
+    0% {
+        content: '..';
+    }
+
+    25% {
+        content: 'Andreja Živanović';
+    }
+
+    50% {
+        content: 'posvećen radu';
+    }
+
+    75% {
+        content: 'u potrazi za usavršavanjem';
+    }
+
+    100% {
+        content: 'timski igrač;
+
+    }
+}
+
+.about-main-body {
+    width: 100%;
+    height: 600px;
+    opacity: 0;
+    animation: animate2 1 5s;
+    font-family: 'Courgette', cursive;
+    background-image: url(images/window.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.about-main-body p {
+    padding-top: 20%;
+    font-size: 1.3em;
+}
+
+@keyframes animate2 {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    75% {
+        opacity: 0.6;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-main-body {
+    opacity: 1;
+}
+
+.about-title {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.about-me {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-column-gap: 20px;
+    margin-bottom: 40px;
+}
+
+.about-me .about-text {
+    line-height: 1.6em;
+}
+
+.about-title .about-main {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-title .about-main:before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 100px;
+    margin-left: -10px;
+    left: calc(50%-100px);
+    background-color: #3498db;
+}
+
+.about-picture {
+    position: relative;
+}
+
+.about-picture .picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    background-image: url(images/Person-48.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+.tehnologije {
+    text-align: center;
+    position: relative;
+}
+
+.tehnologije i {
+    text-align: left;
+    position: absolute;
+    left: 30%;
+    font-size: 1.4em;
+    color: #3498db;
+}
+.tehnologije p{
+    padding:10px 0px 10px 0px;
+}
+.tehnologije p:first-child {
+    font-size: 1.3em;
+    padding-bottom: 20px;
+}
+
+.tehnologije p span {
+    text-align: right;
+    line-height: 30px;
+
+}
+
+/*pocetak galerije*/
+
+.gallery {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-bottom: 30px;
+}
+
+.gallery .gallery-image {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+
+.gallery .gallery-image a img {
+    width: auto;
+    height: 200px;
+    filter: grayscale(100%);
+    transition: 0.5s;
+    border-radius: 30px;
+    max-width: 300px;
+    min-height: 200px;
+}
+
+.gallery .gallery-image a img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+
+.main-image {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    max-width: 1200px;
+    background-color: #000;
+    background-image: url(images/main-gallery.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 30px;
+
+}
+
+.main-image p {
+    font-size: 3em;
+    width: 92%;
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+    position: relative;
+    top: 50%;
+    left: 8%;
+}
+
+.button-down {
+    width: 40px;
+    position: relative;
+    top: 55%;
+    left: 47%;
+    animation: UpDownAnimation 1.5s linear infinite;
+}
+
+.button-down:hover {
+    cursor: pointer;
+}
+
+.button-down .button-down-content {
+    font-size: 2.2em;
+    font-family: 'Special Elite', cursive;
+    color: #fff;
+}
+
+@keyframes UpDownAnimation {
+
+    0%,
+    100% {
+        top: 55%;
+    }
+
+    50% {
+        top: 58%;
+    }
+}
+
+/*Pocetak media dela*/
+
+.media-video {
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    height: 400px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.media-video iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.music {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    width: 92%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+
+/*Pocetak dela za seminarski*/
+
+.main-body {
+    position: relative;
+    margin-top: 30px;
+}
+
+.main-body .first-select {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+}
+
+.main-body .first-select .menu-item,
+.main-body .sem-slider .slider-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-body .first-select .menu-item .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 200px;
+    background-color: #3498db;
+    content: '';
+}
+
+.sem-slider {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.slcMenu-first {
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+}
+
+.slcMenu-first::before {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0px;
+    width: 150px;
+    margin-left: -10px;
+    left: calc(50%-150px);
+    background-color: #3498db;
+}
+
+#red,
+#green,
+#blue {
+    float: left;
+    clear: left;
+    width: 90%;
+    margin: 15px;
+}
+
+#red .ui-slider-range {
+    background: #ef2929;
+}
+
+#red .ui-slider-handle {
+    border-color: #ef2929;
+}
+
+#green .ui-slider-range {
+    background: #8ae234;
+}
+
+#green .ui-slider-handle {
+    border-color: #8ae234;
+}
+
+#blue .ui-slider-range {
+    background: #729fcf;
+}
+
+#blue .ui-slider-handle {
+    border-color: #729fcf;
+}
+
+.slider-item1 {
+    width: 100px;
+    height: 100px;
+    content: '';
+    background-color: blue;
+    border-radius: 100px;
+}
+
+.Sider-header,
+.spinner-header {
+    font-weight: 400;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    text-align: center;
+    position: relative;
+}
+
+.Sider-header::before,
+.spinner-header::before {
+    width: 100px;
+    content: '';
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 0px;
+    left: calc(50% - 50px);
+    background-color: #3498db;
+}
+
+.spinner-body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.toggleImage {
+    position: relative;
+}
+
+.toggleImage1,
+.toggleImage2,
+.toggleImage3,
+.toggleImage4,
+.toggleImage5 {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+}
+
+.toggleImage1,
+.toggleImage2,
+.toggleImage3,
+.toggleImage4,
+.toggleImage5 {
+    display: none;
+}
+
+.kontakt-main {
+    position: relative;
+}
+
+.kontakt-main-img {
+    background-image: url(images/water.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 50vh;
+    background-attachment: fixed;
+}
+
+.head-kontakt {
+    font-size: 1.4em;
+    text-align: center;
+    font-weight: 400;
+    margin-top: 30px;
+    position: relative;
+}
+
+.head-kontakt::before {
+    content: '';
+    width: 120px;
+    height: 2px;
+    position: absolute;
+    background-color: red;
+    bottom: 0;
+    left: calc(50% - 60px);
+    background-color: #3498db;
+}
+
+.kontakt-sep {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.form-div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.form-div input {
+    display: block;
+    margin: 10px 0px 10px 0px;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-div #name {
+    width: 49%;
+    height: 50px;
+    font-size: 1.3em;
+    float: left;
+}
+
+.form-div #email {
+    width: 49%;
+    height: 50px;
+    font-size: 1.3em;
+    float: right;
+}
+
+.form-div #subject {
+    width: 100%;
+    height: 50px;
+    font-size: 1.3em;
+}
+
+.form-div #message {
+    width: 100%;
+    height: 100px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: 1px solid #e1e1e1;
+}
+
+.form-div .btnSubmit {
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    border-radius: 5px;
+    border: 3px solid #3498db;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.form-div .btnSubmit:hover {
+    cursor: pointer;
+    background-color: #3498db;
+    color: #fff;
+}
+
+.kontakt-map iframe {
+    width: 100%;
+    height: 450px;
+    border: 0;
+}
+
+.kontakt-map {
+    margin-bottom: 30px;
+}
+
+.info-div {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 30px;
+}
+
+.info-div p {
+    margin-bottom: 3%;
+}
+
+.info-div p:first-child {
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+
+.about-main-body {
+    display: grid;
+    grid-template-columns: 50% 50%:
+}
+
+.download img {
+    width: 100px;
+    height: 100px;
+}
+
+.download {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media (max-width:1060px) {
+    .home-greeting {
+        font-size: 0.9em;
+    }
+
+    .home-greeting #hello {
+        padding-top: 40px;
+    }
+
+    /*    O meni deo*/
+    .about-main-body p {
+        width: 50% !important;
+    }
+
+    /*    galerija*/
+    .main-image p {
+        top: 40%;
+    }
+
+    .button-down {
+        width: 40px;
+        position: relative;
+        top: 55%;
+        left: 47%;
+        animation: UpDownAnimationF1 1.5s linear infinite;
+    }
+
+    @keyframes UpDownAnimationF1 {
+
+        0%,
+        100% {
+            top: 45%;
+        }
+
+        50% {
+            top: 48%;
+        }
+    }
+}
+
+@media (max-width:860px) {
+    .home-greeting {
+        font-size: 0.9em;
+    }
+
+    .home-greeting #front {
+        width: 50%;
+    }
+
+    .prvi-rad,
+    .drugi-rad {
+        display: block;
+        height: 20%;
+    }
+
+    .prvi-rad-screen,
+    .drugi-rad-screen {
+        margin: auto;
+        left: 0;
+        top: 0;
+    }
+
+    .prvi-rad-tech,
+    .drugi-rad-tech {
+        margin-top: -50px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .side-menu {
+        display: block;
+    }
+
+    .toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .music {
+        display: block;
+        text-align: center;
+        width: 92%;
+        max-width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .spinner-body {
+        display: block;
+        text-align: center;
+    }
+
+    .kontakt-sep {
+        display: block;
+    }
+
+    .form-div .btnSubmit {
+        width: 100%;
+        height: 60px;
+        text-align: center;
+        margin: auto;
+    }
+
+    .info-div {
+        text-align: center;
+        font-size: 1.3em;
+        margin-top: 30px;
+    }
+
+    .info-div p:first-child {
+        font-size: 1.5em;
+    }
+
+}
+
+@media (max-width:580px) {
+    .home-greeting-back {
+        background-image: url(images/back-phone.jpg);
+        height: 400px;
+    }
+
+    .home-greeting #hello {
+        color: #fff;
+        padding: 0;
+    }
+
+    .about-me {
+        display: block;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-bottom: 30px;
+        font-size: 1.1em;
+    }
+
+    .about-picture .tehnologije {
+        font-size: 1.2em;
+    }
+
+    .button-down {
+        display: none;
+    }
+}
+
+@media (max-width:480px) {
+    .home-greeting-back {
+        background-image: url(images/back-phone.jpg);
+        height: 500px;
+    }
+
+    .btnPortfolio {
+        display: none;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width:425px) {
+    .main-body .first-select {
+        display: block;
+        text-align: center;
+        height: auto;
+    }
+
+    .main-body .first-select .menu-item,
+    .main-body .sem-slider .slider-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-body .first-select .menu-item .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 200px;
+        background-color: #3498db;
+        content: '';
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .sem-slider {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+}
